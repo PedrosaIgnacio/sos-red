@@ -2,7 +2,7 @@ import SaludBienestarIcon from '../../../assets/salud-bienestar.svg?react';
 import MovilidadIcon from '../../../assets/movilidad.svg?react';
 import MultiasistenciaIcon from '../../../assets/multiasistencia.svg?react';
 import HogarIcon from '../../../assets/hogar.svg?react';
-import Hogar from '../../../assets/hogar.jpg';
+import Hogar from '../../../assets/HOGAR.jpg';
 import Movilidad from '../../../assets/MOVILIDAD.png';
 import Multiasistencia from '../../../assets/MULTIASISTENCIA.jpg';
 import Salud from '../../../assets/SALUD.jpg';

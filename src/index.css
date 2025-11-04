@@ -21,3 +21,42 @@
 .animate-fadeIn {
   animation: fadeIn 0.5s ease-in-out forwards;
 }
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes fade-left-in {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-right-out {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+}
+
+.fade-left-in {
+  animation: fade-left-in 0.8s ease-in-out forwards;
+}
+
+.fade-right-out {
+  animation: fade-right-out 0.8s ease-in-out forwards;
+}

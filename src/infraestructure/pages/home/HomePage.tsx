@@ -8,7 +8,7 @@ import { HomeActionButtonsWrapper } from './components/HomeActionButtonsWrapper'
 
 export const HomePage = () => {
   return (
-    <div className="w-full flex flex-col bg-[#EEE3D0] relative">
+    <div className="w-full flex flex-col bg-[#EEE3D0]">
       <section className="bg-[#EEE3D0] w-full flex mb-10 2xl:my-10 px-28">
         <div className="grid grid-cols-1 w-full">
           <div className="h-[500px] 2xl:h-[775px] flex items-center">
@@ -58,7 +58,6 @@ export const HomePage = () => {
       <section className="bg-[#EEE3D0] w-full flex flex-col justify-center my-10 px-28">
         <ISOCertificate />
       </section>
-      s{' '}
     </div>
   );
 };

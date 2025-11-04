@@ -1,36 +1,64 @@
-import Image from '../../assets/SALUD.jpg';
-
+import { useEffect, useRef, useState } from 'react';
+import CloseIcon from '../../assets/x.svg?react';
 export const NewsCTA = () => {
+  const ref = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(true);
+  const [animationClass, setAnimationClass] = useState('');
+
+  const handleCloseCTA = () => {
+    setIsVisible(false);
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setAnimationClass('fade-left-in');
+
+          const timeout = setTimeout(() => {
+            setAnimationClass('fade-right-out');
+          }, 6000);
+
+          return () => clearTimeout(timeout);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section
-      className="flex flex-col md:flex-row rounded-2xl overflow-hidden bg-[#0E1117] text-white shadow-xl absolute bottom-0 right-5 left-5 mx-auto border border-gray-300"
-      data-aos="fade-left"
-      data-aos-offset="200"
-      data-aos-delay="0"
-      data-aos-duration="1000"
-      data-aos-easing="ease-in-out"
-      data-aos-mirror="true"
-      data-aos-once="true"
-      data-aos-anchor-placement="top-bottom"
+      ref={ref}
+      className={`fade-out-left flex flex-col md:flex-row rounded-2xl overflow-hidden bg-[#EDE2CF] text-white shadow-xl absolute bottom-8 left-28 right-28 mx-auto border border-gray-300 z-40 ${animationClass} ${
+        isVisible ? '' : 'hidden'
+      }`}
     >
-      <div className="md:w-1/3 relative">
-        <img src={Image} alt="Novedades" className="w-full h-full object-cover opacity-80" />
-        <div className="absolute inset-0 from-[#3B82F6]/70 to-[#9333EA]/70 mix-blend-multiply"></div>
+      <div className="w-full p-8 flex">
+        <div className="w-full flex flex-col justify-center">
+          <div className="flex justify-between items-center">
+            <div>
+              <p className="text-[#FF4020] font-medium mb-2 text-sm">Novedades, lanzamientos y nuevos desafíos</p>
+              <h2 className="text-2xl font-bold mb-2 text-black">Conocé lo más reciente de nuestro equipo</h2>
+              <p className="text-gray-500 mb-2 text-sm">
+                Seguimos creciendo y compartiendo cada paso de nuestro camino.
+              </p>
+            </div>
+            <a
+              href="/novedades"
+              className="inline-block bg-blue-500 hover:bg-blue-600 transition px-6 py-3 rounded-lg text-white font-semibold w-fit"
+            >
+              Ver más
+            </a>
+          </div>
+        </div>
       </div>
-
-      <div className="md:w-2/3 p-10 flex flex-col justify-center">
-        <p className="text-blue-400 font-medium mb-2">Últimas novedades</p>
-        <h2 className="text-4xl font-bold mb-4">Conocé lo más reciente de nuestro equipo</h2>
-        <p className="text-gray-300 mb-8">
-          Enterate de las últimas publicaciones, logros y actualizaciones que compartimos en nuestra cuenta de LinkedIn.
-        </p>
-
-        <a
-          href="#novedades"
-          className="inline-block bg-blue-500 hover:bg-blue-600 transition px-6 py-3 rounded-lg text-white font-semibold w-fit"
-        >
-          Ir a Novedades
-        </a>
+      <div className="absolute top-2 right-2">
+        <button onClick={handleCloseCTA}>
+          <CloseIcon className="text-black" />
+        </button>
       </div>
     </section>
   );

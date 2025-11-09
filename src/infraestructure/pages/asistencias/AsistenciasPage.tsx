@@ -15,15 +15,12 @@ export const AsistenciasPage = () => {
   };
 
   return (
-    <div className="flex px-28 2xl:px-30 flex-1 flex-col items-center gap-8">
+    <div className="flex px-28 2xl:px-30 flex-1 flex-col items-center gap-8 bg-[#EEE3D0]">
       <div className="w-full flex-1 flex py-10 gap-8 2xl:gap-16">
-        <div className="max-w-20 flex flex-col items-center justify-center">
-          <h1 className="text-[#FF4020] font-bold text-7xl 2xl:text-9xl -rotate-90">Asistencias</h1>
-        </div>
-
         <div className="flex flex-1 my-10">
           <div className="flex-1 grid grid-cols-5 2xl:grid-cols-6 gap-4">
-            <div className="flex flex-col col-span-2 justify-center">
+            <div className="flex flex-col col-span-2 justify-center relative">
+              <h1 className="text-[#FF4020] absolute top-0 font-bold text-7xl 2xl:text-9xl">Asistencias</h1>
               {Assistances.map(item => {
                 const isCurrent = item.title === selectedAssistance?.title;
                 return (

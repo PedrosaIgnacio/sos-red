@@ -1,4 +1,4 @@
-const EMBED_LINK = 'https://www.youtube.com/embed/y0wTb3IFnfM?si=2kZpsIEtqF83Lssq&autoplay=1&mute=1';
+const EMBED_LINK = 'https://www.youtube.com/embed/8MlKALPSc1U?si=QTmERuUEOVn37nKD&autoplay=1&mute=1';
 
 export const InstitutionalVideo = () => {
   return (

@@ -57,7 +57,7 @@ export const ContactanosActionButtonsWrapper = () => {
   };
 
   return (
-    <div className="w-full flex justify-between gap-8 xl:gap-20">
+    <div className="w-full grid grid-cols-3 gap-12 gap-y-16 my-12">
       {BUTTONS.map(item => (
         <ActionButton
           key={item.redirectTo}

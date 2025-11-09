@@ -1,6 +1,6 @@
 export const NovedadesPage = () => {
   return (
-    <div className="w-full flex flex-col flex-1">
+    <div className="w-full flex flex-col flex-1 bg-[#EEE3D0]">
       <section className="w-full flex my-10 px-28 flex-col gap-8 items-center flex-1">
         <div style={{ width: '100%', height: '1000px', overflow: 'hidden' }}>
           <iframe

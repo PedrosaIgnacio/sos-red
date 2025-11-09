@@ -13,13 +13,13 @@ const ASSISTANCE_INFO = [
     color: '#FF97BF',
   },
   {
-    title: '+30 años',
+    title: '+38 años',
     subtitle: 'de experiencia',
     color: '#008648',
   },
   {
     title: '+1 millon',
-    subtitle: 'de personas asistidas',
+    subtitle: 'de personas asistidas en el último año',
     color: '#5D3FFF',
   },
   {
@@ -36,7 +36,7 @@ const AssistanceInfo: FC<AssistanceInfoProps> = ({ title, subtitle, color }) => 
       style={{ backgroundColor: color }}
     >
       <h2 className="text-white lg:text-4xl xl:text-6xl 2xl:text-7xl font-bold">{title}</h2>
-      <span className="text-white font-light lg:text-lg xl:text-xl 2xl:text-3xl">{subtitle}</span>
+      <span className="text-white font-light lg:text-lg xl:text-xl 2xl:text-3xl text-center">{subtitle}</span>
     </div>
   );
 };
@@ -64,7 +64,9 @@ export const AssistanceBanner = () => {
       data-aos-anchor-placement="top-bottom"
     >
       <div className="flex flex-col gap-3">
-        <h1 className="text-white font-bold lg:text-4xl xl:text-6xl 2xl:text-8xl">Asistencia perfecta.</h1>
+        <h1 className="text-white font-bold lg:text-4xl xl:text-6xl 2xl:text-8xl">
+          Somos personas asistiendo personas.
+        </h1>
         <span className="text-white lg:text-xl xl:text-2xl 2xl:text-4xl tracking-widest font-extralight">
           Siempre listos para asistirte porque la verdadera perfección es estar presentes cuando más importa.
         </span>

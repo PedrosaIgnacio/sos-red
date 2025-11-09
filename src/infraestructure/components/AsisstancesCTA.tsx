@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import CloseIcon from '../../assets/x.svg?react';
-export const NewsCTA = () => {
+
+export const AssistancesCTA = () => {
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(true);
   const [animationClass, setAnimationClass] = useState('');
@@ -40,17 +41,15 @@ export const NewsCTA = () => {
         <div className="w-full flex flex-col justify-center">
           <div className="flex justify-between items-center">
             <div>
-              <p className="text-[#FF4020] font-medium mb-2 text-sm">Novedades, lanzamientos y nuevos desafíos</p>
-              <h2 className="text-2xl font-bold mb-2 text-black">Conocé lo más reciente de nuestro equipo</h2>
-              <p className="text-gray-500 mb-2 text-sm">
-                Seguimos creciendo y compartiendo cada paso de nuestro camino.
-              </p>
+              <p className="text-[#FF4020] font-medium mb-2 text-sm">Asistencias, coberturas y servicios</p>
+              <h2 className="text-2xl font-bold mb-2 text-black">Tu red de asistencia, siempre ahí</h2>
+              <p className="text-gray-500 mb-2 text-sm">Descubrí cómo estamos para vos, estés donde estés.</p>
             </div>
             <a
-              href="/novedades"
+              href="/asistencias"
               className="inline-block bg-blue-500 hover:bg-blue-600 transition px-6 py-3 rounded-lg text-white font-semibold w-fit"
             >
-              Ver más
+              Conocer asistencias
             </a>
           </div>
         </div>

@@ -24,7 +24,7 @@ export const LineaDirectaPage = () => {
   const groupedClients = useMemo(() => splitIntoColumns(CLIENTS, NUM_COLS), []);
 
   return (
-    <div className="flex flex-col gap-10 py-10">
+    <div className="flex flex-col gap-10 py-10 bg-[#EEE3D0]">
       <div className="flex flex-col gap-4 items-center">
         <h2 className="text-[#FF4020] text-4xl text-center">Linea Directa por cliente</h2>
         <div className="text-center max-w-2xl font-normal">

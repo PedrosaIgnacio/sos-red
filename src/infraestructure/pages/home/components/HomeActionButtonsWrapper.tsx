@@ -12,7 +12,7 @@ const BUTTONS = [
     text: 'Ingresá a la WebApp y solicitá tu servicio',
     color: '#FF4020',
     redirectTo: 'https://tuasistencia.redsos.com.ar/home/login',
-    icon: <TbWorldSearch size={22} color="white" />,
+    icon: <TbWorldSearch className="w-6 h-6 2xl:w-8 2xl:h-8" color="white" />,
     animation: {
       'data-aos': 'fade-in',
       'data-aos-offset': '200',
@@ -28,7 +28,7 @@ const BUTTONS = [
     title: 'WhatsApp',
     text: '¡Comunicate con nosotros por WhatsApp!',
     color: '#FF4020',
-    icon: <FaWhatsapp size={22} color="white" />,
+    icon: <FaWhatsapp className="w-6 h-6 2xl:w-8 2xl:h-8" color="white" />,
     redirectTo: 'https://api.whatsapp.com/send?phone=5491128080012',
     animation: {
       'data-aos': 'fade-in',
@@ -45,7 +45,7 @@ const BUTTONS = [
     title: 'Contacta a tu aseguradora',
     text: 'Encontrá el número de tu aseguradora y comunicate directamente',
     color: '#FF4020',
-    icon: <MdLocalPhone size={22} color="white" />,
+    icon: <MdLocalPhone className="w-6 h-6 2xl:w-8 2xl:h-8" color="white" />,
     redirectTo: PHONE_NUMBER_LINK,
     animation: {
       'data-aos': 'fade-in',
@@ -62,7 +62,7 @@ const BUTTONS = [
     title: 'Línea Directa',
     text: 'Comunícate con nuestra central de atención las 24 hs.',
     color: '#FF4020',
-    icon: <FaCheck size={22} color="white" />,
+    icon: <FaCheck className="w-6 h-6 2xl:w-8 2xl:h-8" color="white" />,
     redirectTo: '/linea-directa',
     animation: {
       'data-aos': 'fade-in',

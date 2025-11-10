@@ -4,7 +4,7 @@ const BUTTONS = [
   {
     title: 'Talento y Cultura',
     text: 'Buscamos nuevos talentos, envianos tu CV',
-    color: '#5C3FFF',
+    color: '#FF4020',
     redirectTo: 'https://sos-red-asistencia.pandape.computrabajo.com',
     animation: {
       'data-aos': 'fade-in',
@@ -20,7 +20,7 @@ const BUTTONS = [
   {
     title: 'Prestadores y Proveedores',
     text: 'Sé parte de nuestra red de prestadores',
-    color: '#008648',
+    color: '#FF4020',
     redirectTo: 'https://forms.gle/URroP3cHs2Q7zPsH6',
     animation: {
       'data-aos': 'fade-in',
@@ -36,7 +36,7 @@ const BUTTONS = [
   {
     title: 'Consultas y sugerencias',
     text: 'Trabajamos en tus comentarios sobre nuestros servicios',
-    color: '#FF97BF',
+    color: '#FF4020',
     redirectTo: 'https://tuportal.redsos.com.ar/form',
     animation: {
       'data-aos': 'fade-in',

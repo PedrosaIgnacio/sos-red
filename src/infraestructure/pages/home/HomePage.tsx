@@ -21,7 +21,7 @@ export const HomePage = () => {
       </section>
       <SectionSeparator />
       <div className="relative top-28 z-100">
-        <NewsCTA />
+        <AssistancesCTA />
       </div>
       <section className="bg-[#EEE3D0] w-full flex flex-col justify-center my-10 2xl:my-20 px-28 ">
         <div className="grid grid-cols-[1fr_380px] xl:grid-cols-[1fr_500px] 2xl:grid-cols-[1fr_550px] justify-center items-center mb-10 2xl:mb-20">
@@ -58,7 +58,7 @@ export const HomePage = () => {
         <HomeActionButtonsWrapper />
       </section>
       <div className="relative py-10 top-12 z-100">
-        <AssistancesCTA />
+        <NewsCTA />
       </div>
       <section className="bg-[#EEE3D0] w-full flex flex-col justify-center my-10 px-28">
         <InstitutionalVideo />

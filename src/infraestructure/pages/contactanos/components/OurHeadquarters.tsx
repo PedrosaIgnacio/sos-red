@@ -39,10 +39,10 @@ const Headquarters: Headquarter[] = [
   {
     title: 'Sede Buenos Aires',
     address: 'Av. Libertador, Piso 4',
-    email: 'recepcionros@redsos.com.ar',
+    email: 'recepcionbue@redsos.com.ar',
     map: (
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.0604428158626!2d-60.66687762353876!3d-32.92300127360291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b654ae16bc21a1%3A0xadcddd71fe834ae!2sAv.%20Carballo%20194%2C%20S2013CTV%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1761926172509!5m2!1ses!2sar"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.998614952086!2d-58.453304924602065!3d-34.55359045485204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb4321257489d%3A0x2a5636733e4c5e6e!2sAv.%20del%20Libertador%206350%20piso%204%2C%20C1428ART%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1762695718299!5m2!1ses!2sar"
         width="500"
         height="500"
         loading="lazy"
@@ -55,7 +55,7 @@ const Headquarters: Headquarter[] = [
     email: 'recepcionros@redsos.com.ar',
     map: (
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.998614952086!2d-58.453304924602065!3d-34.55359045485204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb4321257489d%3A0x2a5636733e4c5e6e!2sAv.%20del%20Libertador%206350%20piso%204%2C%20C1428ART%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1762695718299!5m2!1ses!2sar"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.0604428158626!2d-60.66687762353876!3d-32.92300127360291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b654ae16bc21a1%3A0xadcddd71fe834ae!2sAv.%20Carballo%20194%2C%20S2013CTV%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1761926172509!5m2!1ses!2sar"
         width="500"
         height="500"
         loading="lazy"

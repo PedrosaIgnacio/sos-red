@@ -20,7 +20,7 @@ export const AsistenciasPage = () => {
         <div className="flex flex-1 my-10">
           <div className="flex-1 grid grid-cols-5 2xl:grid-cols-6 gap-4">
             <div className="flex flex-col col-span-2 justify-center relative">
-              <h1 className="text-[#FF4020] absolute top-0 font-bold text-7xl 2xl:text-9xl">Asistencias</h1>
+              <h1 className="text-[#FF4020] absolute top-0 font-bold text-7xl 2xl:text-[5rem]">Asistencias</h1>
               {Assistances.map(item => {
                 const isCurrent = item.title === selectedAssistance?.title;
                 return (

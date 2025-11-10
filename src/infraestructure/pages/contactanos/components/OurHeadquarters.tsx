@@ -72,9 +72,9 @@ export const OurHeadquarters = () => {
   return (
     <div className="w-full grid grid-cols-2 gap-32">
       <div className="flex flex-col gap-8 items-center">
-        {Headquarters.map(h => (
+        {Headquarters.map((h, i) => (
           <div
-            key={h.title}
+            key={`${i}-${h.title}`}
             className="flex flex-col text-lg 2xl:text-xl cursor-pointer hover:bg-gray-300 px-3 py-2 rounded-xl"
             onClick={() => handleSelectHeadquarter(h)}
           >

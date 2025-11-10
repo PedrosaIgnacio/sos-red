@@ -39,7 +39,10 @@ export const Navbar = () => {
       <div className="hidden xl:flex gap-16">
         {NAVBAR_ITEMS.map(element => (
           <div key={element.path}>
-            <Link to={element.path}>
+            <Link
+              to={element.path}
+              {...(element.path.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+            >
               <span className="font-semibold text-base text-white 2xl:text-lg">{element.label}</span>
             </Link>
           </div>

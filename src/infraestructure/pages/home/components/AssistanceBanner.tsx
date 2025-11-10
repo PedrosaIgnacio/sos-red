@@ -53,7 +53,7 @@ export const AssistanceBanner = () => {
 
   return (
     <div
-      className="w-full flex items-center justify-between rounded-[2.56rem] bg-[#FF4020] p-14 2xl:p-20 gap-12"
+      className="w-full flex items-center justify-between rounded-[2.56rem] bg-[#FF4020] p-14 gap-12"
       data-aos="fade-up"
       data-aos-offset="100"
       data-aos-delay="50"
@@ -64,10 +64,8 @@ export const AssistanceBanner = () => {
       data-aos-anchor-placement="top-bottom"
     >
       <div className="flex flex-col gap-3">
-        <h1 className="text-white font-bold lg:text-4xl xl:text-6xl 2xl:text-8xl">
-          Somos personas asistiendo personas.
-        </h1>
-        <span className="text-white lg:text-xl xl:text-2xl 2xl:text-4xl tracking-widest font-extralight">
+        <h1 className="text-white font-bold lg:text-4xl xl:text-6xl">Somos personas asistiendo personas.</h1>
+        <span className="text-white lg:text-xl xl:text-2xl tracking-widest font-extralight">
           Siempre listos para asistirte porque la verdadera perfección es estar presentes cuando más importa.
         </span>
       </div>

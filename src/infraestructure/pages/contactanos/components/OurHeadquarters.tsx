@@ -38,7 +38,7 @@ const Headquarters: Headquarter[] = [
   },
   {
     title: 'Sede Buenos Aires',
-    address: 'Av. Libertador, Piso 4',
+    address: 'Av. Libertador 6350, Piso 4',
     email: 'recepcionbue@redsos.com.ar',
     map: (
       <iframe

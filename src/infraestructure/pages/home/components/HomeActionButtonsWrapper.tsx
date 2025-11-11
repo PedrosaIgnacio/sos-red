@@ -46,7 +46,7 @@ const BUTTONS = [
     text: 'Encontrá el número de tu aseguradora y comunicate directamente',
     color: '#FF4020',
     icon: <MdLocalPhone className="w-6 h-6 2xl:w-8 2xl:h-8" color="white" />,
-    redirectTo: PHONE_NUMBER_LINK,
+    redirectTo: '/linea-directa',
     animation: {
       'data-aos': 'fade-in',
       'data-aos-offset': '200',
@@ -60,10 +60,10 @@ const BUTTONS = [
   },
   {
     title: 'Línea Directa',
-    text: 'Comunícate con nuestra central de atención las 24 hs.',
+    text: '0800 333 6524',
     color: '#FF4020',
     icon: <FaCheck className="w-6 h-6 2xl:w-8 2xl:h-8" color="white" />,
-    redirectTo: '/linea-directa',
+    redirectTo: PHONE_NUMBER_LINK,
     animation: {
       'data-aos': 'fade-in',
       'data-aos-offset': '200',

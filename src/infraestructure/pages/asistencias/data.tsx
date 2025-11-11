@@ -28,6 +28,112 @@ export type Assistance = {
 
 export const Assistances: Assistance[] = [
   {
+    title: 'Movilidad',
+    icon: <MovilidadIcon />,
+    img: Movilidad,
+    description:
+      'Asistencia integral para todo tipo de vehículos. Servicios de urgencia, mantenimiento y cobertura nacional las 24 hs, para que siempre sigas en movimiento.',
+    modal: {
+      title: 'Te acompañamos en cada kilómetro del camino',
+      description:
+        'Sabemos que tu movilidad no puede esperar. Contamos con una red nacional de grúas, mecánicos y servicios para resolver cualquier imprevisto con tu vehículo, moto o bici, estés donde estés.',
+      // content: [
+      //   {
+      //     title: 'Cobertura completa para cada vehículo',
+      //     description:
+      //       'Incluye servicios de auxilio mecánico, remolques, asistencia en ruta, cambio de neumáticos, carga de batería o combustible, y acompañamiento ante siniestros. También abarca asistencia náutica, cobertura para flotas de camiones y soporte para movilidad sustentable (bicicletas y monopatines eléctricos), con atención especializada y soluciones técnicas certificadas.',
+      //   },
+      //   {
+      //     title: 'Tecnología y experiencia',
+      //     description:
+      //       'Gracias a nuestra red nacional de prestadores y herramientas digitales, cada solicitud se gestiona en tiempo real, asegurando respuesta inmediata, trazabilidad y seguridad en todo momento. Porque tu camino no puede esperar, y nosotros tampoco.',
+      //   },
+      // ],
+      content: [
+        {
+          title: 'Mecánica ligera, cambio de batería y lubricentro móvil.',
+          description: '',
+        },
+        {
+          title: 'Envío de grúa o traslado de vehículos (autos, motos y camiones).',
+          description: '',
+        },
+        {
+          title: 'Asistencia para bicicletas o monopatines ante roturas o pinchaduras.',
+          description: '',
+        },
+        {
+          title: 'Servicio de cerrajería automotriz y delivery de llaves.',
+          description: '',
+        },
+        {
+          title: 'Auto sustituto o remise en casos especiales.',
+          description: '',
+        },
+        {
+          title: 'Mecánico online y mesa de ayuda.',
+          description: '',
+        },
+        {
+          title: 'Asistencia legal y médica ante accidentes o robos.',
+          description: '',
+        },
+      ],
+      footer: 'Tu vehículo, siempre en movimiento con la red más completa del país.',
+    },
+  },
+  {
+    title: 'Hogar',
+    icon: <HogarIcon />,
+    img: Hogar,
+    description:
+      'Cuidamos tu casa con servicios rápidos y confiables. Mantenimiento, emergencias y asistencia técnica cuando más la necesitás.',
+    modal: {
+      title: 'Protección, mantenimiento y asistencia completa para tu casa.',
+      description:
+        'Transformamos la asistencia en una experiencia segura y confiable. Te conectamos con expertos para resolver urgencias, prevenir fallas y proteger lo que más querés: tu hogar y tu tranquilidad.',
+      content: [
+        {
+          title: 'Reparaciones urgentes: plomería, electricidad, cerrajería, vidriería y gas.',
+          description: '',
+        },
+        {
+          title: 'Mantenimiento preventivo y reparación de electrodomésticos.',
+          description: '',
+        },
+        {
+          title: 'Puesta a punto de climatización: aires acondicionados y artefactos de gas.',
+          description: '',
+        },
+        {
+          title: 'Protección personal y legal ante robos o daños en el domicilio.',
+          description: '',
+        },
+        {
+          title: 'Asesoramiento profesional para reinserción laboral en caso de desempleo.',
+          description: '',
+        },
+        {
+          title: 'Asistencia médica y emocional para vos o tu familia ante emergencias domésticas.',
+          description: '',
+        },
+      ],
+      footer: 'Tu hogar siempre protegido, con soluciones confiables y profesionales a un llamado de distancia.',
+      // content: [
+      //   {
+      //     title: 'Soluciones a tu medida',
+      //     description:
+      //       'Incluye servicios de plomería, electricidad, gas, cerrajería, vidriería y climatización, junto con el mantenimiento y reparación de electrodomésticos. Además, incorporamos asistencia domiciliaria integral, ideal para resolver urgencias y prevenir futuros inconvenientes.',
+      //   },
+      //   {
+      //     title: 'Mas allá de lo técnico',
+      //     description:
+      //       'También ofrecemos programas de tecnología y ciberseguridad, y asistencia para mascotas, porque entendemos que el hogar abarca mucho más que paredes: es un espacio de bienestar integral. En SOS Asistencia transformamos cada imprevisto en una solución rápida, segura y humana.',
+      //   },
+      // ],
+    },
+  },
+  {
     title: 'Salud y Bienestar',
     icon: <SaludBienestarIcon />,
     img: Salud,
@@ -88,61 +194,6 @@ export const Assistances: Assistance[] = [
     },
   },
   {
-    title: 'Movilidad',
-    icon: <MovilidadIcon />,
-    img: Movilidad,
-    description:
-      'Asistencia integral para todo tipo de vehículos. Servicios de urgencia, mantenimiento y cobertura nacional las 24 hs, para que siempre sigas en movimiento.',
-    modal: {
-      title: 'Te acompañamos en cada kilómetro del camino',
-      description:
-        'Sabemos que tu movilidad no puede esperar. Contamos con una red nacional de grúas, mecánicos y servicios para resolver cualquier imprevisto con tu vehículo, moto o bici, estés donde estés.',
-      // content: [
-      //   {
-      //     title: 'Cobertura completa para cada vehículo',
-      //     description:
-      //       'Incluye servicios de auxilio mecánico, remolques, asistencia en ruta, cambio de neumáticos, carga de batería o combustible, y acompañamiento ante siniestros. También abarca asistencia náutica, cobertura para flotas de camiones y soporte para movilidad sustentable (bicicletas y monopatines eléctricos), con atención especializada y soluciones técnicas certificadas.',
-      //   },
-      //   {
-      //     title: 'Tecnología y experiencia',
-      //     description:
-      //       'Gracias a nuestra red nacional de prestadores y herramientas digitales, cada solicitud se gestiona en tiempo real, asegurando respuesta inmediata, trazabilidad y seguridad en todo momento. Porque tu camino no puede esperar, y nosotros tampoco.',
-      //   },
-      // ],
-      content: [
-        {
-          title: 'Mecánica ligera, cambio de batería y lubricentro móvil.',
-          description: '',
-        },
-        {
-          title: 'Envío de grúa o traslado de vehículos (autos, motos y camiones).',
-          description: '',
-        },
-        {
-          title: 'Asistencia para bicicletas o monopatines ante roturas o pinchaduras.',
-          description: '',
-        },
-        {
-          title: 'Servicio de cerrajería automotriz y delivery de llaves.',
-          description: '',
-        },
-        {
-          title: 'Auto sustituto o remise en casos especiales.',
-          description: '',
-        },
-        {
-          title: 'Mecánico online y mesa de ayuda.',
-          description: '',
-        },
-        {
-          title: 'Asistencia legal y médica ante accidentes o robos.',
-          description: '',
-        },
-      ],
-      footer: 'Tu vehículo, siempre en movimiento con la red más completa del país.',
-    },
-  },
-  {
     title: 'Multiasistencia',
     icon: <MultiasistenciaIcon />,
     img: Multiasistencia,
@@ -194,57 +245,6 @@ export const Assistances: Assistance[] = [
       //     title: 'Experiencia 360°',
       //     description:
       //       'Con Multiasistencia, simplificamos la gestión de todos tus servicios en una sola plataforma, con atención humana, soporte digital y seguimiento continuo. Porque entendemos que no hay dos personas iguales, y por eso tu asistencia tampoco debería serlo.',
-      //   },
-      // ],
-    },
-  },
-  {
-    title: 'Hogar',
-    icon: <HogarIcon />,
-    img: Hogar,
-    description:
-      'Cuidamos tu casa con servicios rápidos y confiables. Mantenimiento, emergencias y asistencia técnica cuando más la necesitás.',
-    modal: {
-      title: 'Protección, mantenimiento y asistencia completa para tu casa.',
-      description:
-        'Transformamos la asistencia en una experiencia segura y confiable. Te conectamos con expertos para resolver urgencias, prevenir fallas y proteger lo que más querés: tu hogar y tu tranquilidad.',
-      content: [
-        {
-          title: 'Reparaciones urgentes: plomería, electricidad, cerrajería, vidriería y gas.',
-          description: '',
-        },
-        {
-          title: 'Mantenimiento preventivo y reparación de electrodomésticos.',
-          description: '',
-        },
-        {
-          title: 'Puesta a punto de climatización: aires acondicionados y artefactos de gas.',
-          description: '',
-        },
-        {
-          title: 'Protección personal y legal ante robos o daños en el domicilio.',
-          description: '',
-        },
-        {
-          title: 'Asesoramiento profesional para reinserción laboral en caso de desempleo.',
-          description: '',
-        },
-        {
-          title: 'Asistencia médica y emocional para vos o tu familia ante emergencias domésticas.',
-          description: '',
-        },
-      ],
-      footer: 'Tu hogar siempre protegido, con soluciones confiables y profesionales a un llamado de distancia.',
-      // content: [
-      //   {
-      //     title: 'Soluciones a tu medida',
-      //     description:
-      //       'Incluye servicios de plomería, electricidad, gas, cerrajería, vidriería y climatización, junto con el mantenimiento y reparación de electrodomésticos. Además, incorporamos asistencia domiciliaria integral, ideal para resolver urgencias y prevenir futuros inconvenientes.',
-      //   },
-      //   {
-      //     title: 'Mas allá de lo técnico',
-      //     description:
-      //       'También ofrecemos programas de tecnología y ciberseguridad, y asistencia para mascotas, porque entendemos que el hogar abarca mucho más que paredes: es un espacio de bienestar integral. En SOS Asistencia transformamos cada imprevisto en una solución rápida, segura y humana.',
       //   },
       // ],
     },

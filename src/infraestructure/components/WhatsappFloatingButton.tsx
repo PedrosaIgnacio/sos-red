@@ -50,7 +50,7 @@ export const WhatsappFloatingButton = () => {
         justify-center
         z-50
       "
-      onClick={() => window.open('https://wa.me/549XXXXXXXXXX', '_blank')}
+      onClick={() => window.open('https://wa.me/5491128080012', '_blank')}
       aria-label="Contactar por WhatsApp"
     >
       <FaWhatsapp size={28} />
